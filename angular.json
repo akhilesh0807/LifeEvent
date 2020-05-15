@@ -127,5 +127,8 @@
       }
     }
   },
-  "defaultProject": "hackerearth"
+  "defaultProject": "hackerearth",
+  "cli": {
+    "analytics": "99ef855d-4a43-467e-a70a-abab5a18c61c"
+  }
 }
