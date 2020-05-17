@@ -1,5 +1,5 @@
 
-<mat-toolbar color="primary">
+<mat-toolbar style="background-color : #4db6ac">
   <span><img src="/assets/images/logo.png" height=30 width=41></span>
   <a mat-button routerLink="/home" routerLinkActive='active'><span class="fa fa-home fa-lg"></span> Home</a>
   <a mat-button routerLink="/aboutus" routerLinkActive='active'><span class="fa fa-info fa-lg"></span> About</a>
@@ -8,20 +8,19 @@
 </mat-toolbar>
 
 <div class="container jumbotron"
-    fxLayout="row"
-    fxLayout.sm="column"
-    fxLayout.xs="column"
-    fxLayoutAlign.xs="start center"
-    fxLayoutAlign.sm="start center"
-    fxLayoutAlign.gt-sm="center center"
-    fxLayoutGap="10px">
+    fxLayout="column"
+    fxLayoutAlign="space-evenly center" 
+    fxLayoutGap="10px"
+    >
 
-  <div fxFlex fxFlex.gt-sm="50%">
-    <h1>Event Name</h1>
-    <p>Some Nice description</p>
+<div fxFlex fxFlex.gt-sm="50%" >
+    <h1 >Event Name</h1>
+  </div>
+  <div>
+    <p>One gateway to all the oppotunities</p>
   </div>
   <div fxFlex fxFlex.gt-sm="20%">
     <img src="/assets/images/logo.png" alt="Logo">
   </div>
-  <div fxFlex></div>
+  
 </div>
