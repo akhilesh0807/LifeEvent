@@ -1,8 +1,14 @@
 $lt-gray: #ddd;
 $background-dark: #512DA8;
+<<<<<<< HEAD
 $background-light: #90caf9;
 $background-pale: #D1C4E9;
 $background-moredark:  #4db6ac;
+=======
+$background-light: #9575CD;
+$background-pale: #D1C4E9;
+$background-moredark: #4527A0;
+>>>>>>> fc7f55190b0e9dc1cc0436293073b68d8ae9a8d7
 
 .active {
     background: $background-moredark;
@@ -17,5 +23,9 @@ $background-moredark:  #4db6ac;
     @include zero-margin(70px,30px);
     background: $background-light ;
     color:floralwhite;
+<<<<<<< HEAD
     min-height: 50;
+=======
+    min-height: 150px;
+>>>>>>> fc7f55190b0e9dc1cc0436293073b68d8ae9a8d7
 }

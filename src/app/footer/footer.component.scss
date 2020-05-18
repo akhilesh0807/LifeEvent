@@ -2,7 +2,11 @@ $lt-gray: #ddd;
 $background-dark: #512DA8;
 $background-light: #9575CD;
 $background-pale: #D1C4E9;
+<<<<<<< HEAD
 $background-moredark: #4db6ac;
+=======
+$background-moredark: #4527A0;
+>>>>>>> fc7f55190b0e9dc1cc0436293073b68d8ae9a8d7
 
 .active {
     background: $background-moredark;
@@ -14,7 +18,11 @@ $background-moredark: #4db6ac;
 }
 
 .footer{
+<<<<<<< HEAD
     background-color: #90caf9;
+=======
+    background-color: $background-pale;
+>>>>>>> fc7f55190b0e9dc1cc0436293073b68d8ae9a8d7
     @include zero-margin(20px, 0px);
 }
 
