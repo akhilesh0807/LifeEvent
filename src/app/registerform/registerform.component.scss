@@ -3,9 +3,20 @@
 }
 
 .half-width {
-  width: 45%
+  width: 45%;
+  
 }
 
 .form-size {
   width: 75%
+}
+
+.flex-spacer {
+  flex: 1 1 auto;
+  }
+  
+.formstyle{
+  background-color: whitesmoke;
+  align-items: center;
+  // text-align: center;
 }
