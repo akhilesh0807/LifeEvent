@@ -1,13 +1,9 @@
-<div class="container jumbotron"
+<div class="container home"
     fxLayout="column"
-    fxLayout.sm="column"
-    fxLayout.xs="column"
-    fxLayoutAlign.xs="start center"
-    fxLayoutAlign.sm="start center"
-    fxLayoutAlign.gt-sm="center center"
+    fxLayoutAlign="center center"
     fxLayoutGap="10px">
 
-  <div fxFlex fxLayoutAlign="space-around center" >
+  <div fxFlex  fxLayoutAlign="center center">
 
     <h3>This is a platform to simplify the event registration process. It aims at removing all the redundant 
       process and make it more simple. So here it just one click away. Click on Register Now !!! and explore the
@@ -16,6 +12,6 @@
     
       <span class="flex-spacer"></span>
   </div>
-  <a mat-button routerLink="/form" routerLinkActive='active'>
-    <span class="fa fa-address-card fa-lg"></span> Register Now!</a>
+  <a mat-button class="detail" (click)="openRegistrationForm()">
+    <span class="fa fa-address-card fa-lg" ></span> Register Now!</a>
 </div>

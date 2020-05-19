@@ -1,35 +1,51 @@
-<div fxFlex fxFlexOffset="20px" class="form-size">
-  <h3>Send us your Feedback</h3>
+<!-- <div fxFlex fxLayour="column">
+<div fxFlex  fxLayour="column"> -->
+<div>
+<mat-toolbar style="background-color: burlywood;">
+  Registration
+  <span class="flex-spacer"></span>
+<button mat-button mat-dialog-close>&times;</button>
+</mat-toolbar>
+
+
+<!-- <Hdiv fxFlex  fxLayour="column" fxFlexOffset="20px" class="form-size"> -->
+  <h2 mat-dailog-title>Registration form</h2>
   <p>{{ registerForm.value | json }} {{ registerForm.status | json }}</p>
 
   <form novalidate [formGroup]="registerForm" #fform="ngForm" (ngSubmit)="onSubmit()">
-    <p>
-      <mat-form-field class="half-width">
+    <mat-dialog-content class="formstyle">
+    <!-- <p> -->
+      <h3 mat-dailog-title>Name</h3>
+      <mat-form-field class="half-width" >
         <input matInput formControlName="name" placeholder="Your Name" type="text" required>
         <mat-error *ngIf="formErrors.name">{{ formErrors.name}}</mat-error>
       </mat-form-field>
+    <!-- </p> -->
       <!-- <mat-form-field class="half-width">
         <input matInput formControlName="lastname" placeholder="Last Name" type="text">
       </mat-form-field> -->
-    </p>
-    <p>
+    <!-- <p> -->
+      <h3 mat-dailog-title>Contact no.</h3>
       <mat-form-field class="half-width">
         <input matInput formControlName="mobile" placeholder="Mobile Number" type="tel" pattern="[0-9]*" required>
         <mat-error *ngIf="formErrors.mobile">{{ formErrors.mobile}}</mat-error>
       </mat-form-field>
-    </p>
-    <p>
+    <!-- </p> -->
+    <!-- <p> -->
+      <h3 mat-dailog-title>Email id</h3>
       <mat-form-field class="half-width">
         <input matInput formControlName="email" placeholder="Email" type="email" required>
         <mat-error *ngIf="formErrors.email">{{formErrors.email }}</mat-error>
       </mat-form-field>
-    </p>
-    <table class="half-width">
+    <!-- </p> -->
+    
+    <table >
       <!-- <td>
         <mat-slide-toggle formControlName="agree">May we contact you?</mat-slide-toggle>
       </td> -->
       <td>
-        <mat-label>Registration Type</mat-label>
+        <!-- <mat-label>Registration Type</mat-label> -->
+        <h3 mat-dailog-title>Registration type</h3>
         <mat-select placeholder="Select registration type" formControlName="registrationtype" required>
           <mat-option *ngFor="let ctype of registerationType" [value]="ctype">
             {{ ctype }}
@@ -38,12 +54,19 @@
         <mat-error *ngIf="formErrors.registrationtype">{{formErrors.registrationtype }}</mat-error>
       </td>
       </table>
-    <p>
+    <!-- <p> -->
+      <h3 mat-dailog-title>Tickets</h3>
       <mat-form-field class="half-width">
         <input matInput formControlName="numtickets" placeholder="Number of Tickets" type="number" required>
         <mat-error *ngIf="formErrors.numtickets">{{formErrors.numtickets }}</mat-error>
       </mat-form-field>
+    <!-- </p> -->
+    <p style="text-align: justify;">
+    <button type="submit" mat-button class="background-primary text-floral-white" style="text-align: center ;"
+    [disabled]="registerForm.invalid">Submit</button>
     </p>
-    <button type="submit" mat-button class="background-primary text-floral-white" [disabled]="registerForm.invalid">Submit</button>
+  </mat-dialog-content>
   </form>
-</div>
+<!-- </div> -->
+
+
